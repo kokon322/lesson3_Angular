@@ -1,0 +1,5 @@
+<div *ngFor="let user of users">
+  {{user.id}} - {{user.name}}
+  <button [routerLink]="['posts',user.id]">posts of this user</button>
+</div>
+<router-outlet></router-outlet>
